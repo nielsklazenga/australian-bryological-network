@@ -1,0 +1,25 @@
+---
+layout: page
+---
+
+{% assign postsByYear = site.categories[page.category] | group_by_exp:"post", "post.date | date: '%Y'" %}
+<ul>
+  {% for year in postsByYear %}
+    <li>
+      <h3>{{ year.name }}</h3>
+      {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
+      <ul>
+        {% for month in postsByMonth %}
+          <li>
+            <h4>{{ month.name }}</h4>
+            <ul>
+              {% for post in month.items %}
+              <li><a href="{{ post.url | absolute_url }}">{{ post.title }}-{{ post.date }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>

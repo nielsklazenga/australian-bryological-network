@@ -1,0 +1,5 @@
+{% if page.banner-image %}
+<div class="page-header" style="background-image: url({{ page.banner_image | relative_url }})"></div>
+{% else %}
+<div class="page-header" style="background-image: url({{ site.banner_image | relative_url }})"></div>
+{% endif %}
