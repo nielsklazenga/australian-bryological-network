@@ -6,3 +6,10 @@
 @import 'jumbotron';
 @import 'banner';
 @import 'homepage-banner';
+
+.thumbnail, iframe.flickr-embed {
+  display: block;
+  border: solid 1px #ddd;
+  padding: 4px;
+  margin-bottom: 24px;
+}
