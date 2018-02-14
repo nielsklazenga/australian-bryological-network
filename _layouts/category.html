@@ -14,7 +14,7 @@ layout: page
             <h4>{{ month.name }}</h4>
             <ul>
               {% for post in month.items %}
-              <li><a href="{{ post.url | absolute_url }}">{{ post.title }}-{{ post.date }}</a></li>
+              <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></li>
               {% endfor %}
             </ul>
           </li>
