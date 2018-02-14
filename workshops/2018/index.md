@@ -43,7 +43,7 @@ the Gold Coast airport will be on Friday 28th September, arriving about 11 am.
 The registration cost is AU$480 which includes accommodation and meals at DEEC and minibus
 transport during the workshop. The Australian Bryophyte Group provides a discount on the
 registration fee to a select number of students who wish to attend the workshop. To be eligible you
-will need to give proof of your enrolment and a presentation of your research, either as a poster or
+will need to give proof of your enrollment and a presentation of your research, either as a poster or
 as a talk. To apply please contact Andrew (andrew@oberonia.com.au).
 
 ### How to register
