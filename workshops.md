@@ -2,6 +2,7 @@
 layout: page
 title: Workshops
 permalink: /workshops/
+banner_image: assets/images/banner/homepage-banner-dawsonia-longiseta.jpg
 ---
 
 ### Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC

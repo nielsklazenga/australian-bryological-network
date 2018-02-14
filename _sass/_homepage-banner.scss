@@ -1,5 +1,5 @@
 .jumbotron {
-    height: 450px;
+    min-height: 420px;
     background-color: #000;
     background-position: center 0;
     background-size: cover;
@@ -8,7 +8,7 @@
     margin-top: 0;
 }
 
-.homepage-banner {
+.homepage-banner, .page-header {
   h1, p {
     color: #fff;
   }

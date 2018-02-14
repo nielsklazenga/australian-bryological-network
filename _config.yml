@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Australian Bryological Network
+title: Australian Bryologists Network
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -41,4 +41,4 @@ plugins:
 #   - vendor/ruby/
 
 # Custom variables
-banner_image: assets/images/moss.jpg
+banner_image: assets/images/banner/moss.jpg
