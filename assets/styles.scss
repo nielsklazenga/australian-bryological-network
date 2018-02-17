@@ -3,9 +3,12 @@
 
 @import 'bootstrap/stylesheets/bootstrap';
 
-@import 'jumbotron';
 @import 'banner';
 @import 'homepage-banner';
+
+.navbar {
+  margin-bottom: 0;
+}
 
 figurecaption {
   display: block;
@@ -18,4 +21,31 @@ figurecaption {
   border: solid 1px #ddd;
   padding: 4px;
   margin-bottom: 24px;
+}
+
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage-card {
+
+  a {
+    display: block;
+    color: #000;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: #f9f9f9;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: none;
+  }
 }

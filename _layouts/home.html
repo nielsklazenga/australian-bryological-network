@@ -19,52 +19,21 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <h2>Upcoming workshop</h2>
-          <p>The XIVth Australian Bryophyte Workshop will be held from 23–28 September 2018 in the picturesque Northern Rivers region of New South Wales</p>
-          <p><a class="btn btn-default" href="{{ "workshops/2018/" | relative_url }}" role="button">View details &raquo;</a></p>
+
+        {% for card in page.cards %}
+        <div class="col-lg-4 col-md-6 homepage-card clearfix">
+          <a href="{{ card.link | relative_url }}">
+            <h2 class="homepage-card-title">{{ card.title }}</h2>
+            <p class="homepage-card-blurb">{{ card.blurb }}</p>
+            <p class="text-right"><i class="fa fa-arrow-circle-o-right fa-2x"></i></p>
+          </a>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <h2>Latest newsletter</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-lg-4 col-md-6">
-          <h2>Bryophyte of the month</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <h2>Image gallery</h2>
-          <div class="row">
-            <div class="col-md-9 col-lg-8 col-xs-8">
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a class="btn btn-default" href="{{ "/image-gallery" | relative_url }}" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-3 col-lg-4 col-xs-4">
-              <img class="img-responsive" src="https://farm5.staticflickr.com/4048/4692214413_bc0214c8a5_q.jpg" width="150" height="150" alt="IMG_0303"/>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <h2>News</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-lg-4 col-md-6">
-          <h2>...</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
+        {% endfor %}
+
       </div>
     </div> <!-- /.container -->
 
     {% include footer.html %}
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="{{ "/assets/javascripts/bootstrap.min.js" | relative_url }}"></script>
-  </body>
+    {% include footer-scripts.html %}
+    </body>
 </html>
