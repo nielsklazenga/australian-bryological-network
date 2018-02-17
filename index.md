@@ -22,7 +22,7 @@ cards:
       a rare moss found in the high country of south-eastern Australia as well as
       southern South America and South Georgia.
     link: "/bryophyte-of-the-month/2018/02/17/bartramia-subsymmetrica"
-  - title: Image gallery
+  - title: Image Gallery
     blurb: >-
       A gallery of photographs of Australian mosses, liverworts and hornworts,
       and their habitats.
