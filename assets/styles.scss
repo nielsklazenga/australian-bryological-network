@@ -7,6 +7,12 @@
 @import 'banner';
 @import 'homepage-banner';
 
+figurecaption {
+  display: block;
+  padding: 3px 0;
+  margin-bottom: 20px;
+}
+
 .thumbnail, iframe.flickr-embed {
   display: block;
   border: solid 1px #ddd;

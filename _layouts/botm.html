@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <header class="post-header">
+          <h1 class="post-title" itemprop="name headline">Bryophyte of the Month</h1>
+          <p class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+              {{ page.date | date: date_format }}
+            </time>
+            {% if page.author %}
+              • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+            {% endif %}</p>
+            <h2><i>{{ page.scientific_name | escape }}</i> {{ page.scientific_name_authorship | escape}}
+        </header>
+
+        <div class="post-content" itemprop="articleBody">
+        {% if page.images %}
+          <div class="row">
+            <div class="col-md-8">
+              {{ content }}
+            </div>
+            <div class="col-md-4">
+              <div class="row">
+                {% for image in page.images %}
+                <div class="col-sm-6 col-md-12">
+                  {% include figure.html src=image.src caption=image.caption creator=image.creator %}
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% else %}
+          {{ content }}
+          {% endif %}
+        </div>
+
+        {% if site.disqus.shortname %}
+          {% include disqus_comments.html %}
+        {% endif %}
+      </div> <!-- /.col-md-12 -->
+    </div> <!-- /.row -->
+  </div> <!--/.container -->
+</article>
